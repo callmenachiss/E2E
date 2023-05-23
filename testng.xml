@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+	<listeners>
+		<listener class-name="utils.customlistners"/>
+	</listeners>
+	
+	<test  thread-count="2" name="HRM_Test">
+		<classes>
+			<class name="com.HRM.Testcases.LoginPageTests" />
+		</classes>
+	</test>
+</suite>
