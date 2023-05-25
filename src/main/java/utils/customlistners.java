@@ -33,6 +33,7 @@ public class customlistners extends Helper implements ITestListener{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		//captureScreenShot(result.getMethod().getMethodName());
 	}
 	
 

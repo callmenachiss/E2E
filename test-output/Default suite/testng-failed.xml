@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HRM.Testcases.LoginPageTests">
+      <class name="com.HRM.Testcases.AdminPageTests">
         <methods>
-          <include name="verifyForgotPasswordlnkFeature"/>
           <include name="setup"/>
+          <include name="searchSystemUsersinAdminMenu"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.HRM.Testcases.LoginPageTests -->
+      </class> <!-- com.HRM.Testcases.AdminPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

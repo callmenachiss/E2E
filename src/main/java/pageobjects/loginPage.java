@@ -32,6 +32,9 @@ public class loginPage extends seleniumBase{
 	@FindBy(tagName ="button")
 	WebElement loginbtn;
 	
+	@FindBy(xpath="//p[text()='Forgot your password? ']")
+	WebElement forgotyourpasswordlnktxt;
+	
 	public loginPage enterUsername(String uname){
 		type(usernametxt,uname);
 		customlistners.extentTest.get().pass("User is entered the username in username field");
@@ -48,14 +51,20 @@ public class loginPage extends seleniumBase{
 		click(loginbtn);
 		customlistners.extentTest.get().pass("User is clicked on the login button");
 		customlistners.extentTest.get().pass("User is landing in Homepage");
-		return new homePage();
+		return new homePage(driver);
 	}
 	
 	public homePage login() {
 		 enterUsername(username)
 		.enterPassword(password)
 		.clickLoginbtn();
-		 return new homePage();
+		 return new homePage(driver);
+	}
+	
+	public resetPasswordPage clickforgotpwdlnktxt(){
+		click(forgotyourpasswordlnktxt);
+		customlistners.extentTest.get().pass("User is clicked on forgot your password link");
+		return new resetPasswordPage(driver);
 	}
 
 }

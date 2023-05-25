@@ -13,6 +13,13 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- com.HRM.Testcases.LoginPageTests -->
+      <class name="com.HRM.Testcases.HomePageTests">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyAdminPageHeaderlbl"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.HRM.Testcases.HomePageTests -->
     </classes>
   </test> <!-- HRM_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
